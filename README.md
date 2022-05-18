@@ -8,9 +8,9 @@ This application project is part of the **[Capstone Project - Bangkit Academy 20
 
 Thanks to the following people who have contributed to this project:
 
-* [@tobimaulana](https://github.com/tobimaulana)
-* [@fadhilauliia](https://github.com/fadhilauliia)
-* [@ade-iqbal](https://github.com/ade-iqbal)
-* [@mazayasyarafina](https://github.com/mazayasyarafina)
-* [@aprizazicka](https://github.com/aprizazicka)
-* [@anggastaa](https://github.com/anggastaa)
+* Tobi Fiambodo Syech Maulana ([@tobimaulana](https://github.com/tobimaulana))
+* Muhammad Fadhil Aulia ([@fadhilauliia](https://github.com/fadhilauliia))
+* Ade Iqbal ([@ade-iqbal](https://github.com/ade-iqbal))
+* Mazaya Syarafina ([@mazayasyarafina](https://github.com/mazayasyarafina))
+* Apriza Zicka Rizquina ([@aprizazicka](https://github.com/aprizazicka))
+* Anggasta Aji Azhari ([@anggastaa](https://github.com/anggastaa))
