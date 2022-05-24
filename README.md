@@ -11,6 +11,6 @@ Thanks to the following people who have contributed to this project:
 * Tobi Fiambodo Syech Maulana ([@tobimaulana](https://github.com/tobimaulana))
 * Muhammad Fadhil Aulia ([@fadhilauliia](https://github.com/fadhilauliia))
 * Ade Iqbal ([@ade-iqbal](https://github.com/ade-iqbal))
-* Mazaya Syarafina ([@mazayasyarafina](https://github.com/ayyasyaraf))
+* Mazaya Syarafina ([@ayyasyaraf](https://github.com/ayyasyaraf))
 * Apriza Zicka Rizquina ([@aprizazicka](https://github.com/aprizazicka))
 * Anggasta Aji Azhari ([@anggastaa](https://github.com/anggastaa))
