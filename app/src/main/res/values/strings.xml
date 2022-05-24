@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Spezia</string>
+    <string name="onBoarding_title1">Identify Spice</string>
+    <string name="onBoarding_general_title">OnBoarding Screen General Title</string>
+    <string name="onBoarding_general_desc">OnBoarding Screen General Description</string>
+    <string name="onBoarding_general_img">OnBoarding Screen Vector Image</string>
+    <string name="onBoarding_general_logo">OnBoarding Screen App Logo</string>
+    <string name="onBoarding_title2">Learn Many Spice Species</string>
+    <string name="onBoarding_desc1">You can identify the spice you don’t know through your camera</string>
+    <string name="onBoarding_desc2">Let’s learn about the many spice species that exist in this world</string>
+    <string name="get_started">GET STARTED</string>
+    <string name="next">NEXT</string>
 </resources>

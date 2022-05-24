@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imgOnBoarding"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="100dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/onBoarding_general_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/titleOnBoarding"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/onBoarding_general_title"
+        android:textColor="@color/dark_green"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/imgOnBoarding"
+        app:layout_constraintStart_toStartOf="@+id/imgOnBoarding"
+        app:layout_constraintTop_toBottomOf="@+id/imgOnBoarding" />
+
+    <TextView
+        android:id="@+id/descOnBoarding"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/onBoarding_general_desc"
+        android:textColor="@color/medium_grey"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/imgOnBoarding"
+        app:layout_constraintStart_toStartOf="@+id/imgOnBoarding"
+        app:layout_constraintTop_toBottomOf="@+id/titleOnBoarding" />
+</androidx.constraintlayout.widget.ConstraintLayout>
