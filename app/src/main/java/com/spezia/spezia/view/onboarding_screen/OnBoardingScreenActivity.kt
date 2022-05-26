@@ -14,6 +14,7 @@ import com.spezia.spezia.R
 import com.spezia.spezia.adapter.OnBoardingScreenViewPagerAdapter
 import com.spezia.spezia.databinding.ActivityOnBoardingScreenBinding
 import com.spezia.spezia.model.OnBoardingScreenData
+import com.spezia.spezia.view.welcome_screen.WelcomeActivity
 
 class OnBoardingScreenActivity : AppCompatActivity() {
 
@@ -28,7 +29,7 @@ class OnBoardingScreenActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         if (restorePrefOnBoardingData() == true) {
-            val intent = Intent(applicationContext, MainActivity::class.java)
+            val intent = Intent(applicationContext, WelcomeActivity::class.java)
             startActivity(intent)
             finish()
         }
@@ -67,7 +68,7 @@ class OnBoardingScreenActivity : AppCompatActivity() {
             }
             if (position == onBoardingScreenData.size) {
                 savePrefOnBoardingData()
-                val intent = Intent(applicationContext, MainActivity::class.java)
+                val intent = Intent(applicationContext, WelcomeActivity::class.java)
                 startActivity(intent)
                 finish()
             }

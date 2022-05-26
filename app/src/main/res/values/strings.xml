@@ -10,4 +10,26 @@
     <string name="onBoarding_desc2">Let’s learn about the many spice species that exist in this world</string>
     <string name="get_started">GET STARTED</string>
     <string name="next">NEXT</string>
+
+    <string name="enter_name">Enter username</string>
+    <string name="enter_email">Enter your email</string>
+    <string name="email_invalid">Invalid Email</string>
+    <string name="enter_pass">Enter your password</string>
+    <string name="password_invalid">Password must have 8 character</string>
+    <string name="title_main">Hi, friend!</string>
+    <string name="txt_main">Please select one of the following buttons,\nthank you and welcome to Spezia.</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="not_have_an_account">Not have an account?</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="register_txt">Register!</string>
+    <string name="username">Username</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="regist_txt">Please fill the data with properly and correctly</string>
+    <string name="edge_decoration_img">Edge decoration image</string>
+    <string name="spezia_logo_welcome">Spezia welcome screen logo image</string>
+    <string name="back">Back</string>
+    <string name="login_vector_illustration">Login vector illustration</string>
 </resources>
