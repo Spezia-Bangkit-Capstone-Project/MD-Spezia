@@ -6,6 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/svr"
     tools:context=".view.register.RegisterActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -179,45 +180,40 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="32dp"
             android:layout_marginEnd="16dp"
+            android:layout_marginBottom="50dp"
             android:fontFamily="@font/montserrat_bold"
             android:text="@string/register"
             android:textColor="@color/white"
             android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/passwordEditTextLayout" />
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/white_circle_bg_register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:gravity="center"
-            android:layout_marginBottom="50dp"
-            android:orientation="horizontal"
+            android:padding="20dp"
+            android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/r_btn_1">
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/white_circle_bg_loading"
+            android:elevation="10dp">
 
-            <TextView
-                android:id="@+id/text_have"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="2dp"
-                android:fontFamily="@font/montserrat_regular"
-                android:text="@string/already_have_an_account"
-                android:textColor="@color/dark_green"
-                android:textSize="12sp" />
+            <ProgressBar
+                android:id="@+id/loadingIndicatorRegister"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
 
-            <TextView
-                android:id="@+id/txt_login"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_semibold"
-                android:text="@string/login"
-                android:textColor="@color/medium_primary_green_dark"
-                android:textSize="12sp" />
-        </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

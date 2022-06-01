@@ -15,7 +15,7 @@
     <string name="enter_email">Enter your email</string>
     <string name="email_invalid">Invalid Email</string>
     <string name="enter_pass">Enter your password</string>
-    <string name="password_invalid">Password must have 8 character</string>
+    <string name="password_invalid">Password must be at least 8 characters</string>
     <string name="title_main">Hi, friend!</string>
     <string name="txt_main">Please select one of the following buttons,\nthank you and welcome to Spezia.</string>
     <string name="login">Login</string>
@@ -32,4 +32,24 @@
     <string name="spezia_logo_welcome">Spezia welcome screen logo image</string>
     <string name="back">Back</string>
     <string name="login_vector_illustration">Login vector illustration</string>
+
+    <string name="api_message_registration_failed">Failed to Register an Account!</string>
+    <string name="api_message_email_has_been_used">Email has been used. Try using another email you have!</string>
+    <string name="api_message_error_on_server">An error occurred while connecting to the server. Please check your internet connection!</string>
+    <string name="invalid_pw_empty">Password must be filled!</string>
+    <string name="invalid_email_empty">Email must be filled!</string>
+    <string name="invalid_username_empty">Username must be filled!</string>
+    <string name="login_failed">Failed to login. Try again!</string>
+    <string name="wrong_email_pw">Wrong email / password!</string>
+    <string name="awesome">Awesome!</string>
+    <string name="login_success">You have successfully logged in. Have a good time!</string>
+    <string name="login_success2">Login success..</string>
+    <string name="continueAlertDialog">Continue</string>
+
+    <string name="message_main_page">Happy sharing stories with your friends!</string>
+    <string name="greeting">Hi, %1$s.</string>
+    <string name="logout">Logout</string>
+    <string name="cancel">Cancel</string>
+    <string name="logout_confirmation">Are you sure to logout ? This action will clear your session and token information!</string>
+    <string name="account_created_successfully">Nice! Your account has been created successfully. Please login!</string>
 </resources>

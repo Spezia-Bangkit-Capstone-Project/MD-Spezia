@@ -2,7 +2,7 @@ package com.spezia.spezia.view.onboarding_screen
 
 import android.content.Context
 import android.content.Intent
-import android.content.SharedPreferences
+//import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Window
@@ -15,6 +15,7 @@ import com.spezia.spezia.adapter.OnBoardingScreenViewPagerAdapter
 import com.spezia.spezia.databinding.ActivityOnBoardingScreenBinding
 import com.spezia.spezia.model.OnBoardingScreenData
 import com.spezia.spezia.view.welcome_screen.WelcomeActivity
+import com.spezia.spezia.utils.SharedPreferences
 
 class OnBoardingScreenActivity : AppCompatActivity() {
 
@@ -22,22 +23,25 @@ class OnBoardingScreenActivity : AppCompatActivity() {
     private var onBoardingScreenViewPager : ViewPager? = null
     private lateinit var binding: ActivityOnBoardingScreenBinding
     var position = 0
-    private var sharedPrefs : SharedPreferences? = null
+//    private var sharedPrefs : SharedPreferences? = null
+    private lateinit var pre : SharedPreferences
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        if (restorePrefOnBoardingData() == true) {
-            val intent = Intent(applicationContext, WelcomeActivity::class.java)
-            startActivity(intent)
-            finish()
-        }
+//        if (restorePrefOnBoardingData() == true) {
+//            val intent = Intent(applicationContext, WelcomeActivity::class.java)
+//            startActivity(intent)
+//            finish()
+//        }
 
         supportActionBar?.hide()
 
         binding = ActivityOnBoardingScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        pre = SharedPreferences(this)
 
         val onBoardingScreenData : MutableList<OnBoardingScreenData> =
             ArrayList<OnBoardingScreenData>().apply {
@@ -67,7 +71,8 @@ class OnBoardingScreenActivity : AppCompatActivity() {
                 onBoardingScreenViewPager?.currentItem = position
             }
             if (position == onBoardingScreenData.size) {
-                savePrefOnBoardingData()
+//                savePrefOnBoardingData()
+                pre.firstInstall = true
                 val intent = Intent(applicationContext, WelcomeActivity::class.java)
                 startActivity(intent)
                 finish()
@@ -100,17 +105,17 @@ class OnBoardingScreenActivity : AppCompatActivity() {
 
     }
 
-    private fun savePrefOnBoardingData() {
-        sharedPrefs = applicationContext.getSharedPreferences("prefs", Context.MODE_PRIVATE)
-        val editor = sharedPrefs?.edit()
-        editor?.putBoolean("isFirstTimeUsed", true)
-        editor?.apply()
-    }
-
-    private fun restorePrefOnBoardingData() : Boolean? {
-        sharedPrefs = applicationContext.getSharedPreferences("prefs", Context.MODE_PRIVATE)
-        return sharedPrefs?.getBoolean("isFirstTimeUsed", false)
-    }
+//    private fun savePrefOnBoardingData() {
+//        sharedPrefs = applicationContext.getSharedPreferences("prefs", Context.MODE_PRIVATE)
+//        val editor = sharedPrefs?.edit()
+//        editor?.putBoolean("isFirstTimeUsed", true)
+//        editor?.apply()
+//    }
+//
+//    private fun restorePrefOnBoardingData() : Boolean? {
+//        sharedPrefs = applicationContext.getSharedPreferences("prefs", Context.MODE_PRIVATE)
+//        return sharedPrefs?.getBoolean("isFirstTimeUsed", false)
+//    }
 
 
 }
