@@ -4,54 +4,184 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/main_background2"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/hiTextView"
+    <LinearLayout
+        android:id="@+id/ly1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:fontFamily="@font/montserrat_bold"
-        android:lines="1"
-        android:maxLines="1"
-        android:text=""
-        android:textAlignment="center"
-        android:textColor="@color/dark_green"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.4" />
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
-    <TextView
-        android:id="@+id/messageTextView"
+        <TextView
+            android:id="@+id/kindTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/montserrat_extrabold"
+            android:text="Kind of Spices"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/DescTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="You can scan spice photos by using this feature"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/spices"
+            android:layout_width="300dp"
+            android:layout_height="230dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/spices" />
+
+        <TextView
+            android:id="@+id/text_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/montserrat_extrabold"
+            android:text="Anyone want help, Friend?"
+            android:textAlignment="center"
+            android:textColor="@color/medium_primary_green_dark"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/text_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="We'll help you about what spices you have to scan"
+            android:textAlignment="center"
+            android:textColor="@color/medium_primary_green_dark"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/menuGridLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat_medium"
-        android:text="@string/message_main_page"
-        android:textColor="@color/dark_green"
-        android:textSize="14sp"
-        android:textAlignment="center"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
+        android:rowCount="2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hiTextView"
-        app:layout_constraintVertical_bias="0.07" />
+        app:layout_constraintTop_toBottomOf="@id/ly1">
 
-    <Button
-        android:id="@+id/btn_logout"
-        android:layout_width="200dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="50dp"
-        android:text="LOGOUT"
-        android:fontFamily="@font/montserrat_bold"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/messageTextView" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="30dp"
+            app:cardBackgroundColor="@color/medium_primary_green_light"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/montserrat_extrabold"
+                android:padding="20dp"
+                android:text="Scan"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:drawableTopCompat="@drawable/ic_camera" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_dictionary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="30dp"
+            app:cardBackgroundColor="@color/medium_primary_green_light"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/montserrat_extrabold"
+                android:padding="20dp"
+                android:text="Dictionary"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:drawableTopCompat="@drawable/ic_dictionary" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_article"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/medium_primary_green_light"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/montserrat_extrabold"
+                android:padding="20dp"
+                android:text="Article"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:drawableTopCompat="@drawable/ic_article" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/medium_primary_green_light"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/montserrat_extrabold"
+                android:padding="20dp"
+                android:text="Profile"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:drawableTopCompat="@drawable/ic_profile" />
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
