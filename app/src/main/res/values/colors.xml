@@ -10,4 +10,5 @@
     <color name="light_grey_very_light">#F1F1F1</color>
     <color name="light_grey_light_light">#AFAFAF</color>
     <color name="light_grey_light">#BFBFBF</color>
+    <color name="blue_link">#2894AC</color>
 </resources>

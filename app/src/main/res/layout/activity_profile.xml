@@ -41,4 +41,97 @@
         android:textSize="15sp"
         app:layout_constraintTop_toBottomOf="@id/text_name" />
 
+    <LinearLayout
+        android:id="@+id/ly2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_email">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="30dp"
+            app:cardBackgroundColor="@color/medium_primary_green_light"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/montserrat_extrabold"
+                android:padding="30dp"
+                android:text="@string/about"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:drawableTopCompat="@drawable/ic_info" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="30dp"
+            app:cardBackgroundColor="@color/medium_primary_green_light"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/montserrat_extrabold"
+                android:padding="30dp"
+                android:text="@string/logout"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:drawableTopCompat="@drawable/ic_logout_1" />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="30dp"
+        app:cardBackgroundColor="@color/medium_primary_green_light"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ly2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/montserrat_extrabold"
+            android:padding="30dp"
+            android:text="@string/language"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:drawableTopCompat="@drawable/ic_language" />
+
+    </androidx.cardview.widget.CardView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

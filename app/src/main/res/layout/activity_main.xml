@@ -22,7 +22,7 @@
             android:layout_height="match_parent"
             android:layout_marginTop="40dp"
             android:fontFamily="@font/montserrat_extrabold"
-            android:text="Kind of Spices"
+            android:text="@string/head_text_main"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="25sp" />
@@ -32,7 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat_medium"
-            android:text="You can scan spice photos by using this feature"
+            android:text="@string/subtext_main"
             android:textAlignment="center"
             android:textColor="@color/white"
             android:textSize="13sp" />
@@ -51,7 +51,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:fontFamily="@font/montserrat_extrabold"
-            android:text="Anyone want help, Friend?"
+            android:text="@string/anyone_text"
             android:textAlignment="center"
             android:textColor="@color/medium_primary_green_dark"
             android:textSize="20sp" />
@@ -62,7 +62,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
             android:fontFamily="@font/montserrat_medium"
-            android:text="We'll help you about what spices you have to scan"
+            android:text="@string/anyone_2"
             android:textAlignment="center"
             android:textColor="@color/medium_primary_green_dark"
             android:textSize="11sp" />
@@ -102,7 +102,7 @@
                 android:drawablePadding="10dp"
                 android:fontFamily="@font/montserrat_extrabold"
                 android:padding="20dp"
-                android:text="Scan"
+                android:text="@string/scan"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:drawableTopCompat="@drawable/ic_camera" />
@@ -128,7 +128,7 @@
                 android:drawablePadding="10dp"
                 android:fontFamily="@font/montserrat_extrabold"
                 android:padding="20dp"
-                android:text="Dictionary"
+                android:text="@string/dictionary"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:drawableTopCompat="@drawable/ic_dictionary" />
@@ -152,7 +152,7 @@
                 android:drawablePadding="10dp"
                 android:fontFamily="@font/montserrat_extrabold"
                 android:padding="20dp"
-                android:text="Article"
+                android:text="@string/article"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:drawableTopCompat="@drawable/ic_article" />
@@ -176,7 +176,7 @@
                 android:drawablePadding="10dp"
                 android:fontFamily="@font/montserrat_extrabold"
                 android:padding="20dp"
-                android:text="Profile"
+                android:text="@string/profile"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 app:drawableTopCompat="@drawable/ic_profile" />

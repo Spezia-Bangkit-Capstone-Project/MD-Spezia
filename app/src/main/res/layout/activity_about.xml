@@ -6,4 +6,102 @@
     android:layout_height="match_parent"
     tools:context=".view.AboutActivity">
 
+    <ImageView
+        android:id="@+id/btn_a_back"
+        android:layout_width="19dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/back"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_a_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:text="@string/about"
+        android:textColor="@color/dark_green"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/btn_a_back" />
+
+    <TextView
+        android:id="@+id/text_a_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:text="@string/spezia"
+        android:textColor="@color/dark_green"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/text_a_1" />
+
+    <TextView
+        android:id="@+id/text_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/desk_spezia"
+        android:textColor="@color/dark_green"
+        android:textSize="11sp"
+        app:layout_constraintTop_toBottomOf="@id/text_a_2" />
+
+    <TextView
+        android:id="@+id/text_developer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:text="@string/dev_title"
+        android:textColor="@color/dark_green"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/text_desc" />
+
+    <TextView
+        android:id="@+id/text_dev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/team_name"
+        android:textColor="@color/dark_green"
+        android:textSize="11sp"
+        app:layout_constraintTop_toBottomOf="@id/text_developer" />
+
+    <TextView
+        android:id="@+id/text_resources"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:text="@string/resources"
+        android:textColor="@color/dark_green"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/text_dev" />
+
+    <TextView
+        android:id="@+id/text_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/link"
+        android:textColor="@color/blue_link"
+        android:textSize="11sp"
+        app:layout_constraintTop_toBottomOf="@id/text_resources" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -52,4 +52,22 @@
     <string name="cancel">Cancel</string>
     <string name="logout_confirmation">Are you sure to logout ? This action will clear your session and token information!</string>
     <string name="account_created_successfully">Nice! Your account has been created successfully. Please login!</string>
+
+    <string name="team_name">Tobi Fiambodo Syech Maulana\nMuhammad Fadhil Aulia\nApriza Zicka Rizquina\nAnggasta Aji Azhari\nMazaya Syarafina\nAde Iqbal</string>
+    <string name="link"><![CDATA[https://id.pngtree.com/freepng/small-autumn-forest-plant-small-scene_5765665.html\n\nhttps://id.pngtree.com/freepng/small-scene-shrubs-grasses-and-plants_7120250.html\n\nhttps://storyset.com/planthttps://storyset.com/plant\n\nhttps://storyset.com/illustration/software-engineer/amico\n\nhttps://storyset.com/illustration/mobile-development/cuate\n\nhttps://storyset.com/illustration/profile-pic/cuate#8DC73DFF&hide=&hide=complete\n\nhttps://www.freepik.com/free-vector/vector-illustration-variety-spices-herbs-wooden-background_1265737.htm#query=Spice%20Vectors&position=10&from_view=search\n\nhttps://www.freepik.com/free-vector/vector-illustration-variety-spices-herbs-wooden-bowls-black-background_1320609.htm#page=3&query=spice&position=45&from_view=keyword]]></string>
+    <string name="about">About</string>
+    <string name="spezia">Spezia!</string>
+    <string name="desk_spezia">Indonesia is a country with abundant resources in the world, spices are no exception. With the variety of spices available, there are many variants of food that can be made by combining several of these spices. Not only for food seasoning, these spices are also often used as herbal medicine ingredients for the community. However, most people are still confused in distinguishing or do not know what spices are in front of their eyes.</string>
+    <string name="dev_title">Developer of Application</string>
+    <string name="resources">Resources</string>
+    <string name="in_development">In Development…</string>
+    <string name="head_text_main">Kind of Spices</string>
+    <string name="subtext_main">You can scan spice photos by using this feature</string>
+    <string name="anyone_text">Anyone want help, Friend?</string>
+    <string name="anyone_2">We\'ll help you about what spices you have to scan</string>
+    <string name="scan">Scan</string>
+    <string name="dictionary">Dictionary</string>
+    <string name="article">Article</string>
+    <string name="profile">Profile</string>
+    <string name="language">Language</string>
 </resources>
