@@ -65,9 +65,22 @@
     <string name="subtext_main">You can scan spice photos by using this feature</string>
     <string name="anyone_text">Anyone want help, Friend?</string>
     <string name="anyone_2">We\'ll help you about what spices you have to scan</string>
+    <string name="language">Language</string>
+
+    <string name="spezia_header">SPEZIA</string>
+    <string name="spezia_desc_header">An image processing based\nspices recognition app</string>
+    <string name="edge_decoration_img_main_menu">Edge decoration image in main menu</string>
+    <string name="dashboard_title">Dashboard</string>
     <string name="scan">Scan</string>
     <string name="dictionary">Dictionary</string>
     <string name="article">Article</string>
     <string name="profile">Profile</string>
-    <string name="language">Language</string>
+    <string name="scan_desc">Scan the spices you don’t know.</string>
+    <string name="dictionary_desc">Increase your knowledge about various spices.</string>
+    <string name="article_desc">Explore the latest articles about spices.</string>
+    <string name="profile_desc">View your account profile and other settings.</string>
+    <string name="menu_item_icon_1">Scan menu item icon</string>
+    <string name="menu_item_icon_2">Dictionary menu item icon</string>
+    <string name="menu_item_icon_3">Article menu item icon</string>
+    <string name="menu_item_icon_4">Profile menu item icon</string>
 </resources>

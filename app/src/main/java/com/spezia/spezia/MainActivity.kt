@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AlertDialog
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
@@ -13,6 +14,11 @@ import com.spezia.spezia.databinding.ActivityMainBinding
 import com.spezia.spezia.local_datastore.UserModel
 import com.spezia.spezia.local_datastore.UserPreferences
 import com.spezia.spezia.utils.ViewModelFactory
+import com.spezia.spezia.view.ArticleActivity
+import com.spezia.spezia.view.DictionaryActivity
+import com.spezia.spezia.view.ProfileActivity
+import com.spezia.spezia.view.ScanActivity
+import com.spezia.spezia.view.login.LoginActivity
 import com.spezia.spezia.view.welcome_screen.WelcomeActivity
 import com.spezia.spezia.view_model.MainViewModel
 
@@ -21,7 +27,7 @@ private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(na
 class MainActivity : AppCompatActivity() {
 
     private lateinit var mainViewModel: MainViewModel
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding : ActivityMainBinding
     private lateinit var user : UserModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,25 +35,78 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setupViewModel()
+        supportActionBar?.hide()
 
-        binding.btnLogout.setOnClickListener {
-            AlertDialog.Builder(this).apply {
-                setCancelable(false)
-                setIcon(R.drawable.ic_warning)
-                setTitle(getString(R.string.logout))
-                setMessage(getString(R.string.logout_confirmation))
-                setPositiveButton(getString(R.string.logout)) { _, _ ->
-                    mainViewModel.logout()
-                }
-                setNegativeButton(getString(R.string.cancel)){ dialog, _ ->
-                    dialog.cancel()
-                }
-                create()
-                show()
-            }
+        setupViewModel()
+        setupMainMenuAction()
+
+    }
+
+    private fun setupMainMenuAction() {
+        binding.menuScan.setOnClickListener {
+            shareTokenAndMoveToScanActivity()
         }
 
+        binding.menuDictionary.setOnClickListener {
+            shareTokenAndMoveToDictionaryActivity()
+        }
+
+        binding.menuArticle.setOnClickListener {
+            moveToArticleActivity()
+        }
+
+        binding.menuProfile.setOnClickListener {
+            shareTokenAndMoveToProfileActivity()
+        }
+    }
+
+    private fun shareTokenAndMoveToProfileActivity() {
+        mainViewModel.getUser().observe(this) { user ->
+            this.user = user
+            Log.d("Move Activity","Your Token : ${user.token}")
+
+            if (this.user.isLogin) {
+                val intent = Intent(this, ProfileActivity::class.java)
+                intent.let {
+                    it.putExtra(ProfileActivity.EXTRA_TOKEN_PROFILE, user.token)
+                    startActivity(it)
+                }
+            }
+        }
+    }
+
+    private fun moveToArticleActivity() {
+        startActivity(Intent(this, ArticleActivity::class.java))
+    }
+
+    private fun shareTokenAndMoveToDictionaryActivity() {
+        mainViewModel.getUser().observe(this) { user ->
+            this.user = user
+            Log.d("Move Activity","Your Token : ${user.token}")
+
+            if (this.user.isLogin) {
+                val intent = Intent(this, DictionaryActivity::class.java)
+                intent.let {
+                    it.putExtra(DictionaryActivity.EXTRA_TOKEN_DICTIONARY, user.token)
+                    startActivity(it)
+                }
+            }
+        }
+    }
+
+    private fun shareTokenAndMoveToScanActivity() {
+        mainViewModel.getUser().observe(this) { user ->
+            this.user = user
+            Log.d("Move Activity","Your Token : ${user.token}")
+
+            if (this.user.isLogin) {
+                val intent = Intent(this, ScanActivity::class.java)
+                intent.let {
+                    it.putExtra(ScanActivity.EXTRA_TOKEN_SCAN, user.token)
+                    startActivity(it)
+                }
+            }
+        }
     }
 
     private fun setupViewModel() {
@@ -57,17 +116,11 @@ class MainActivity : AppCompatActivity() {
         )[MainViewModel::class.java]
 
         mainViewModel.getUser().observe(this) { user ->
-            if (user.isLogin) {
-                binding.hiTextView.text = getString(R.string.greeting, user.username)
-            } else {
+            if (!user.isLogin) {
                 startActivity(Intent(this, WelcomeActivity::class.java))
                 finish()
             }
         }
-    }
-
-    override fun onBackPressed() {
-        super.onBackPressed()
     }
 
     companion object {

@@ -11,4 +11,9 @@
     <color name="light_grey_light_light">#AFAFAF</color>
     <color name="light_grey_light">#BFBFBF</color>
     <color name="blue_link">#2894AC</color>
+    <color name="dark_green_top_main_menu">#004D25</color>
+    <color name="low_dark_green_top_main_menu">#11823b</color>
+    <color name="medium_green_top_main_menu">#48bf53</color>
+    <color name="light_green_top_main_menu">#91f086</color>
+    <color name="color_circle_ornament">#4091f086</color>
 </resources>

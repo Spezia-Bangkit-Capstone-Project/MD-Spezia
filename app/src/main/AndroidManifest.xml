@@ -33,6 +33,12 @@
         android:theme="@style/Theme.Spezia"
         tools:targetApi="31">
         <activity
+            android:name=".view.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.ArticleActivity"
+            android:exported="false" />
+        <activity
             android:name=".view.AboutActivity"
             android:exported="false" />
         <activity
