@@ -46,7 +46,6 @@
     <string name="login_success2">Login success..</string>
     <string name="continueAlertDialog">Continue</string>
 
-    <string name="message_main_page">Happy sharing stories with your friends!</string>
     <string name="greeting">Hi, %1$s.</string>
     <string name="logout">Logout</string>
     <string name="cancel">Cancel</string>
@@ -83,4 +82,6 @@
     <string name="menu_item_icon_2">Dictionary menu item icon</string>
     <string name="menu_item_icon_3">Article menu item icon</string>
     <string name="menu_item_icon_4">Profile menu item icon</string>
+
+    <string name="profile_vector_illustration">Profile vector illustration</string>
 </resources>
