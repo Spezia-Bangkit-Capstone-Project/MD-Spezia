@@ -96,6 +96,8 @@
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
+                android:foreground="@drawable/card_view_click_fx"
+                android:clickable="true"
                 android:id="@+id/menu_scan"
                 android:layout_width="match_parent"
                 android:layout_height="90dp"
@@ -103,7 +105,8 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
                 app:cardCornerRadius="10dp"
-                app:cardElevation="5dp">
+                app:cardElevation="5dp"
+                android:focusable="true">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -168,6 +171,8 @@
                 </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:foreground="@drawable/card_view_click_fx"
+                android:clickable="true"
                 android:id="@+id/menu_dictionary"
                 android:layout_width="match_parent"
                 android:layout_height="90dp"
@@ -175,7 +180,8 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
                 app:cardCornerRadius="10dp"
-                app:cardElevation="5dp">
+                app:cardElevation="5dp"
+                android:focusable="true">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -240,6 +246,8 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:foreground="@drawable/card_view_click_fx"
+                android:clickable="true"
                 android:id="@+id/menu_article"
                 android:layout_width="match_parent"
                 android:layout_height="90dp"
@@ -247,7 +255,8 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
                 app:cardCornerRadius="10dp"
-                app:cardElevation="5dp">
+                app:cardElevation="5dp"
+                android:focusable="true">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -310,6 +319,8 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:foreground="@drawable/card_view_click_fx"
+                android:clickable="true"
                 android:id="@+id/menu_profile"
                 android:layout_width="match_parent"
                 android:layout_height="90dp"
@@ -318,7 +329,8 @@
                 android:layout_marginEnd="20dp"
                 android:layout_marginBottom="30dp"
                 app:cardCornerRadius="10dp"
-                app:cardElevation="5dp">
+                app:cardElevation="5dp"
+                android:focusable="true">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
