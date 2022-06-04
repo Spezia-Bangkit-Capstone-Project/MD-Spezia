@@ -1,4 +1,4 @@
-package com.spezia.spezia.view
+package com.spezia.spezia.view.article
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

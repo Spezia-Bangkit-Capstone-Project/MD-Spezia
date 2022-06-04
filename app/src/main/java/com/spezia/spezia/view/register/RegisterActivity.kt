@@ -1,11 +1,9 @@
 package com.spezia.spezia.view.register
 
 import android.content.Context
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
@@ -15,7 +13,6 @@ import com.spezia.spezia.R
 import com.spezia.spezia.databinding.ActivityRegisterBinding
 import com.spezia.spezia.local_datastore.UserPreferences
 import com.spezia.spezia.utils.ViewModelFactory
-import com.spezia.spezia.view.login.LoginActivity
 import com.spezia.spezia.view_model.RegisterViewModel
 
 private val Context.dataStore : DataStore<Preferences> by preferencesDataStore(name = "settings")

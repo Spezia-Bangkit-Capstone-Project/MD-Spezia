@@ -1,15 +1,10 @@
 package com.spezia.spezia.view.onboarding_screen
 
-import android.content.Context
 import android.content.Intent
-//import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Window
-import android.view.WindowManager
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
-import com.spezia.spezia.MainActivity
 import com.spezia.spezia.R
 import com.spezia.spezia.adapter.OnBoardingScreenViewPagerAdapter
 import com.spezia.spezia.databinding.ActivityOnBoardingScreenBinding

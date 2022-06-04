@@ -1,6 +1,5 @@
-package com.spezia.spezia.view
+package com.spezia.spezia.view.dictionary
 
-import android.Manifest
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.spezia.spezia.R

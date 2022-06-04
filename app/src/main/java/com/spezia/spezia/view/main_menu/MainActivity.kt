@@ -1,11 +1,10 @@
-package com.spezia.spezia
+package com.spezia.spezia.view.main_menu
 
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import androidx.appcompat.app.AlertDialog
 import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
@@ -14,11 +13,10 @@ import com.spezia.spezia.databinding.ActivityMainBinding
 import com.spezia.spezia.local_datastore.UserModel
 import com.spezia.spezia.local_datastore.UserPreferences
 import com.spezia.spezia.utils.ViewModelFactory
-import com.spezia.spezia.view.ArticleActivity
-import com.spezia.spezia.view.DictionaryActivity
-import com.spezia.spezia.view.ProfileActivity
-import com.spezia.spezia.view.ScanActivity
-import com.spezia.spezia.view.login.LoginActivity
+import com.spezia.spezia.view.article.ArticleActivity
+import com.spezia.spezia.view.dictionary.DictionaryActivity
+import com.spezia.spezia.view.profile.ProfileActivity
+import com.spezia.spezia.view.scan.ScanActivity
 import com.spezia.spezia.view.welcome_screen.WelcomeActivity
 import com.spezia.spezia.view_model.MainViewModel
 

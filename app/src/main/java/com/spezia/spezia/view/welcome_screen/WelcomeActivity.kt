@@ -3,7 +3,6 @@ package com.spezia.spezia.view.welcome_screen
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.spezia.spezia.R
 import com.spezia.spezia.databinding.ActivityWelcomeBinding
 import com.spezia.spezia.view.login.LoginActivity
 import com.spezia.spezia.view.register.RegisterActivity

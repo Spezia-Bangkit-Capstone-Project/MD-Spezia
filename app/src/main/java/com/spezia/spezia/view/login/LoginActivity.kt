@@ -12,14 +12,12 @@ import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModelProvider
-import com.spezia.spezia.MainActivity
 import com.spezia.spezia.R
 import com.spezia.spezia.databinding.ActivityLoginBinding
 import com.spezia.spezia.local_datastore.UserModel
 import com.spezia.spezia.local_datastore.UserPreferences
 import com.spezia.spezia.utils.ViewModelFactory
-import com.spezia.spezia.view.register.RegisterActivity
-import com.spezia.spezia.view.welcome_screen.WelcomeActivity
+import com.spezia.spezia.view.main_menu.MainActivity
 import com.spezia.spezia.view_model.LoginViewModel
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "settings")
