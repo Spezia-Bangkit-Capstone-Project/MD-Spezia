@@ -8,8 +8,14 @@ import com.spezia.spezia.local_datastore.UserModel
 import com.spezia.spezia.local_datastore.UserPreferences
 import kotlinx.coroutines.launch
 
-class MainViewModel(private val pref : UserPreferences) : ViewModel() {
-    fun getUserInMainMenu() : LiveData<UserModel> {
+class ProfileViewModel(private val pref : UserPreferences) : ViewModel() {
+    fun getUserInProfile() : LiveData<UserModel> {
         return pref.getUser().asLiveData()
+    }
+
+    fun logoutInProfile() {
+        viewModelScope.launch {
+            pref.logout()
+        }
     }
 }

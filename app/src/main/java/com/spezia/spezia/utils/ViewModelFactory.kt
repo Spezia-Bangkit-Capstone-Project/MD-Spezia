@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.spezia.spezia.local_datastore.UserPreferences
 import com.spezia.spezia.view_model.LoginViewModel
 import com.spezia.spezia.view_model.MainViewModel
+import com.spezia.spezia.view_model.ProfileViewModel
 import com.spezia.spezia.view_model.RegisterViewModel
 import java.lang.IllegalArgumentException
 
@@ -13,6 +14,9 @@ class ViewModelFactory(private val pref : UserPreferences) : ViewModelProvider.N
     @Suppress("UNCHECKED_CAST")
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         return when {
+            modelClass.isAssignableFrom(ProfileViewModel::class.java) -> {
+                ProfileViewModel(pref) as T
+            }
             modelClass.isAssignableFrom(MainViewModel::class.java) -> {
                 MainViewModel(pref) as T
             }

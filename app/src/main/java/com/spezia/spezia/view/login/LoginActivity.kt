@@ -52,7 +52,7 @@ class LoginActivity : AppCompatActivity() {
             val email = binding.emailEditText.text.toString()
             val pw = binding.passwordEditText.text.toString()
 
-            loginViewModel.login(this, email, pw)
+            loginViewModel.loginToApp(this, email, pw)
         }
     }
 
@@ -62,7 +62,7 @@ class LoginActivity : AppCompatActivity() {
             ViewModelFactory(UserPreferences.getInstance(dataStore))
         )[LoginViewModel::class.java]
 
-        loginViewModel.getUser().observe(this) { user ->
+        loginViewModel.getUserInLogin().observe(this) { user ->
             Log.d("Login Successful : ", user.token)
             this.user = user
             Log.d("LoginActivity", "Your Token : ${user.token}")

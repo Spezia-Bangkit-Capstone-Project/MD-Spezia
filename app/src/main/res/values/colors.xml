@@ -6,6 +6,7 @@
     <color name="medium_primary_green_light">#8DC73D</color>
     <color name="medium_primary_green_dark">#6E9D2E</color>
     <color name="medium_grey">#868686</color>
+    <color name="medium_grey_for_desc">#646464</color>
     <color name="light_grey_dark">#C4C4C4</color>
     <color name="light_grey_very_light">#F1F1F1</color>
     <color name="light_grey_light_light">#AFAFAF</color>

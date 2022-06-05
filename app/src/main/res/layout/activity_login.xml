@@ -21,16 +21,33 @@
             app:layout_constraintTop_toTopOf="parent"
             android:contentDescription="@string/edge_decoration_img"/>
 
-        <ImageView
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:clickable="true"
             android:id="@+id/btn_l_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:src="@drawable/ic_back"
+            android:background="@drawable/white_circle_bg_loading"
+            android:elevation="5dp"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:contentDescription="@string/back"/>
+            app:layout_constraintVertical_bias="0.03"
+            android:focusable="true">
+
+            <View
+                android:id="@+id/back_icon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_back"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView
             android:id="@+id/l_text_1"

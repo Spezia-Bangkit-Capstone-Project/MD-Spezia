@@ -35,10 +35,10 @@ class LoginViewModel(private val pref : UserPreferences) : ViewModel() {
     private val apiMsg = MutableLiveData<String>()
     val apiMessage : LiveData<String> = apiMsg
 
-    fun getUser() : LiveData<UserModel> {
+    fun getUserInLogin() : LiveData<UserModel> {
         return pref.getUser().asLiveData()
     }
-    fun login(user : UserModel) {
+    fun loginInLogin(user : UserModel) {
         viewModelScope.launch {
             pref.login(user)
         }
@@ -81,7 +81,7 @@ class LoginViewModel(private val pref : UserPreferences) : ViewModel() {
         return isCorrected
     }
 
-    fun login(context : Context, email: String, pw: String){
+    fun loginToApp(context : Context, email: String, pw: String){
         if (checkField(email, pw)) {
             val client = ApiConfig.getApiService().loginAccount(email, pw)
             loadingProcess.value = true
@@ -105,7 +105,7 @@ class LoginViewModel(private val pref : UserPreferences) : ViewModel() {
                                 respBody.loginResult.token,
                                 true
                             )
-                            login(user)
+                            loginInLogin(user)
                             loadingProcess.value = false
                             apiMsg.value = context.getString(R.string.login_success2)
                             Log.e(LoginActivity.TAG, "onSuccess: ${respBody.message}")

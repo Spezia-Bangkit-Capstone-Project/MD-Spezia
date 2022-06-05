@@ -49,14 +49,14 @@
     <string name="greeting">Hi, %1$s.</string>
     <string name="logout">Logout</string>
     <string name="cancel">Cancel</string>
-    <string name="logout_confirmation">Are you sure to logout ? This action will clear your session and token information!</string>
+    <string name="logout_confirmation">Are you sure to logout ? This action will clear your session!</string>
     <string name="account_created_successfully">Nice! Your account has been created successfully. Please login!</string>
 
-    <string name="team_name">Tobi Fiambodo Syech Maulana\nMuhammad Fadhil Aulia\nApriza Zicka Rizquina\nAnggasta Aji Azhari\nMazaya Syarafina\nAde Iqbal</string>
+    <string name="team_name">1. Tobi Fiambodo Syech Maulana\n2. Muhammad Fadhil Aulia\n3. Apriza Zicka Rizquina\n4. Anggasta Aji Azhari\n5. Mazaya Syarafina\n6. Ade Iqbal</string>
     <string name="link"><![CDATA[https://id.pngtree.com/freepng/small-autumn-forest-plant-small-scene_5765665.html\n\nhttps://id.pngtree.com/freepng/small-scene-shrubs-grasses-and-plants_7120250.html\n\nhttps://storyset.com/planthttps://storyset.com/plant\n\nhttps://storyset.com/illustration/software-engineer/amico\n\nhttps://storyset.com/illustration/mobile-development/cuate\n\nhttps://storyset.com/illustration/profile-pic/cuate#8DC73DFF&hide=&hide=complete\n\nhttps://www.freepik.com/free-vector/vector-illustration-variety-spices-herbs-wooden-background_1265737.htm#query=Spice%20Vectors&position=10&from_view=search\n\nhttps://www.freepik.com/free-vector/vector-illustration-variety-spices-herbs-wooden-bowls-black-background_1320609.htm#page=3&query=spice&position=45&from_view=keyword]]></string>
     <string name="about">About</string>
     <string name="spezia">Spezia!</string>
-    <string name="desk_spezia">Indonesia is a country with abundant resources in the world, spices are no exception. With the variety of spices available, there are many variants of food that can be made by combining several of these spices. Not only for food seasoning, these spices are also often used as herbal medicine ingredients for the community. However, most people are still confused in distinguishing or do not know what spices are in front of their eyes.</string>
+    <string name="desk_spezia">An image processing-based application that is useful for recognizing the existing spices and then providing a description of the spices. By scanning or taking photos of the spices, users can find out the type and description of the spices. Not only that, users are also given recommendations or suggestions on what food processing can be served using these ingredients and provide information on the use of these ingredients as herbal medicines.</string>
     <string name="dev_title">Developer of Application</string>
     <string name="resources">Resources</string>
     <string name="in_development">In Development…</string>
@@ -84,4 +84,11 @@
     <string name="menu_item_icon_4">Profile menu item icon</string>
 
     <string name="profile_vector_illustration">Profile vector illustration</string>
+    <string name="contact_us_desc">If you have problems, other questions, or want to report bugs related to this Spezia app, please send an email to : C22-PS136@bangkit.academy</string>
+    <string name="contact_us_title">Contact Us</string>
+    <string name="app_developer_title">App Developer</string>
+    <string name="spezia_definition_title">Spezia Definition</string>
+    <string name="about_spezia_title">About Spezia</string>
+    <string name="app_version_title">App Version</string>
+    <string name="app_version_desc">The latest version of this Spezia app is 1.0</string>
 </resources>

@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun shareTokenAndMoveToProfileActivity() {
-        mainViewModel.getUser().observe(this) { user ->
+        mainViewModel.getUserInMainMenu().observe(this) { user ->
             this.user = user
             Log.d("Move Activity","Your Token : ${user.token}")
 
@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun shareTokenAndMoveToDictionaryActivity() {
-        mainViewModel.getUser().observe(this) { user ->
+        mainViewModel.getUserInMainMenu().observe(this) { user ->
             this.user = user
             Log.d("Move Activity","Your Token : ${user.token}")
 
@@ -93,7 +93,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun shareTokenAndMoveToScanActivity() {
-        mainViewModel.getUser().observe(this) { user ->
+        mainViewModel.getUserInMainMenu().observe(this) { user ->
             this.user = user
             Log.d("Move Activity","Your Token : ${user.token}")
 
@@ -113,7 +113,7 @@ class MainActivity : AppCompatActivity() {
             ViewModelFactory(UserPreferences.getInstance(dataStore))
         )[MainViewModel::class.java]
 
-        mainViewModel.getUser().observe(this) { user ->
+        mainViewModel.getUserInMainMenu().observe(this) { user ->
             if (!user.isLogin) {
                 startActivity(Intent(this, WelcomeActivity::class.java))
                 finish()
