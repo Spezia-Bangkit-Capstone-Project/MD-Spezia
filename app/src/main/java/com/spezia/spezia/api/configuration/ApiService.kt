@@ -1,7 +1,8 @@
 package com.spezia.spezia.api.configuration
 
-import com.spezia.spezia.api.api_model.login.LoginResponse
-import com.spezia.spezia.api.api_model.register.SuccessfulRegisterResponse
+import com.spezia.spezia.api.api_responses.dictionary.DictionaryResponse
+import com.spezia.spezia.api.api_responses.login.LoginResponse
+import com.spezia.spezia.api.api_responses.register.SuccessfulRegisterResponse
 import retrofit2.Call
 import retrofit2.http.*
 
@@ -21,5 +22,10 @@ interface ApiService {
         @Field("email") email: String,
         @Field("password") password: String
     ) : Call<LoginResponse>
+
+    @GET("spices")
+    fun getAllSpicesDictionary(
+        @Header("Authorization") token : String
+    ) : Call<DictionaryResponse>
 
 }

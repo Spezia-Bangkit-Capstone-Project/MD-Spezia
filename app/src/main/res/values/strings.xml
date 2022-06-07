@@ -91,4 +91,13 @@
     <string name="about_spezia_title">About Spezia</string>
     <string name="app_version_title">App Version</string>
     <string name="app_version_desc">The latest version of this Spezia app is 1.0</string>
+
+    <string name="item_row_spice_name">Spice Name</string>
+    <string name="item_row_short_desc">Short description here…</string>
+    <string name="item_row_pic_spices">Spice picture</string>
+    <string name="item_row_scientific_name">Scientific name</string>
+    <string name="item_row_benefits">Benefits</string>
+    <string name="item_row_description">Description</string>
+    <string name="item_row_details">Details</string>
+    <string name="failed_load_data_dictionary">Failed to load data from server. Try again!</string>
 </resources>

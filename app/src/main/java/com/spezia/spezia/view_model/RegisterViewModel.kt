@@ -7,7 +7,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.spezia.spezia.R
-import com.spezia.spezia.api.api_model.register.SuccessfulRegisterResponse
+import com.spezia.spezia.api.api_responses.register.SuccessfulRegisterResponse
 import com.spezia.spezia.api.configuration.ApiConfig
 import com.spezia.spezia.local_datastore.UserPreferences
 import com.spezia.spezia.view.register.RegisterActivity

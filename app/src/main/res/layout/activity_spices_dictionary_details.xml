@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.dictionary.SpicesDictionaryDetailsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clActionBar"
+        android:layout_width="match_parent"
+        android:elevation="10dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/low_dark_green_top_main_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/back_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/ic_back_white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/item_row_details"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/back_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/back_icon" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clActionBar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/img_spice"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="20dp"
+                android:adjustViewBounds="true"
+                android:elevation="7dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/round_imageView"
+                tools:src="@drawable/spicess" />
+
+            <TextView
+                android:id="@+id/tv_spice_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/low_dark_green_top_main_menu"
+                android:layout_marginTop="20dp"
+                android:textSize="23sp"
+                android:textAlignment="center"
+                tools:text="@string/item_row_spice_name"
+                android:fontFamily="@font/montserrat_extrabold"
+                app:layout_constraintEnd_toEndOf="@+id/img_spice"
+                app:layout_constraintStart_toStartOf="@+id/img_spice"
+                app:layout_constraintTop_toBottomOf="@id/img_spice" />
+
+            <TextView
+                android:id="@+id/tv_scientific_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/medium_grey_for_desc"
+                android:fontFamily="@font/montserrat_medium"
+                tools:text="@string/item_row_scientific_name"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="@+id/tv_spice_name"
+                app:layout_constraintStart_toStartOf="@+id/tv_spice_name"
+                app:layout_constraintTop_toBottomOf="@id/tv_spice_name" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center|start"
+                android:drawablePadding="10dp"
+                android:textColor="@color/low_dark_green_top_main_menu"
+                android:text="@string/item_row_description"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_scientific_name"
+                app:layout_constraintStart_toStartOf="@+id/tv_scientific_name"
+                app:layout_constraintTop_toBottomOf="@+id/tv_scientific_name"
+                app:drawableStartCompat="@drawable/ic_spices_description" />
+
+            <TextView
+                android:id="@+id/tv_spice_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_medium"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="3sp"
+                android:textColor="@color/medium_grey_for_desc"
+                app:layout_constraintEnd_toEndOf="@+id/textView4"
+                app:layout_constraintTop_toBottomOf="@+id/textView4"
+                app:layout_constraintStart_toStartOf="@id/textView4"
+                tools:text="@tools:sample/lorem/random" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:gravity="center|start"
+                android:drawablePadding="10dp"
+                android:textColor="@color/low_dark_green_top_main_menu"
+                android:text="@string/item_row_benefits"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_spice_description"
+                app:layout_constraintStart_toStartOf="@+id/tv_spice_description"
+                app:layout_constraintTop_toBottomOf="@+id/tv_spice_description"
+                app:drawableStartCompat="@drawable/ic_benefit" />
+
+            <TextView
+                android:id="@+id/tv_spice_benefits"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="50dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:textSize="12sp"
+                android:lineSpacingExtra="3sp"
+                android:textColor="@color/medium_grey_for_desc"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/textView5"
+                app:layout_constraintStart_toStartOf="@id/textView5"
+                app:layout_constraintTop_toBottomOf="@+id/textView5"
+                tools:text="@tools:sample/lorem" />
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

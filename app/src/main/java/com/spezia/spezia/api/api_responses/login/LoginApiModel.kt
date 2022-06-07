@@ -1,4 +1,4 @@
-package com.spezia.spezia.api.api_model.login
+package com.spezia.spezia.api.api_responses.login
 
 import com.google.gson.annotations.SerializedName
 

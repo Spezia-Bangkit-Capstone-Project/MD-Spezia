@@ -5,7 +5,7 @@ import android.util.Log
 import android.util.Patterns
 import androidx.lifecycle.*
 import com.spezia.spezia.R
-import com.spezia.spezia.api.api_model.login.LoginResponse
+import com.spezia.spezia.api.api_responses.login.LoginResponse
 import com.spezia.spezia.api.configuration.ApiConfig
 import com.spezia.spezia.local_datastore.UserModel
 import com.spezia.spezia.local_datastore.UserPreferences
