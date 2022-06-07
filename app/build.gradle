@@ -32,6 +32,7 @@ android {
         jvmTarget = '1.8'
     }
     buildFeatures {
+        mlModelBinding true
         viewBinding true
     }
 }
