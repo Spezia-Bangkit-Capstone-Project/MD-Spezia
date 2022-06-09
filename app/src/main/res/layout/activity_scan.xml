@@ -57,98 +57,93 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:id="@+id/btn_photo_camera"
-                android:layout_width="150dp"
+                android:id="@+id/button"
+                android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginTop="30dp"
-                android:text="Camera"
-                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="30dp"
+                android:text="Take Picture"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:elevation="10dp"
                 android:backgroundTint="@color/low_dark_green_top_main_menu"
-                app:layout_constraintEnd_toStartOf="@id/guidelineScanAct1"
-                app:layout_constraintHorizontal_bias="0.6"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/iv_display_image" />
+                app:cornerRadius="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/imageView"
+                app:layout_constraintStart_toStartOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/result"
+                app:layout_constraintVertical_bias="0.0" />
 
             <Button
-                android:id="@+id/btn_photo_gallery"
-                android:layout_width="150dp"
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:layout_marginTop="30dp"
-                android:fontFamily="@font/montserrat_bold"
-                android:text="Choose File"
-                android:backgroundTint="@color/low_dark_green_top_main_menu"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="@+id/guidelineScanAct1"
-                app:layout_constraintTop_toBottomOf="@+id/iv_display_image" />
-
-            <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/iv_display_image"
-                app:shapeAppearanceOverlay="@style/round_imageView"
-                android:layout_width="270dp"
-                android:layout_height="405dp"
-                android:layout_marginTop="30dp"
-                android:adjustViewBounds="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="30dp"
                 android:elevation="10dp"
-                android:src="@drawable/placeholder"
+                android:backgroundTint="@color/low_dark_green_top_main_menu"
+                android:text="Launch Gallery"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:cornerRadius="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/imageView"
+                app:layout_constraintStart_toStartOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@id/button" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="300sp"
+                android:layout_height="300sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.5" />
-
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guidelineScanAct1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintGuide_percent="0.5"
-                android:orientation="vertical"/>
+                app:layout_constraintVertical_bias="0.0" />
 
             <TextView
-                android:id="@+id/tv_output_title"
+                android:id="@+id/classified"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
+                android:text="Classified as:"
                 android:fontFamily="@font/montserrat_medium"
-                android:text="Output : "
-                android:textColor="@color/medium_grey"
-                android:textSize="20sp"
-                app:layout_constraintEnd_toStartOf="@+id/guidelineScanAct1"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/btn_photo_camera"
-                app:layout_constraintTop_toBottomOf="@id/btn_photo_camera" />
-
-            <TextView
-                android:id="@+id/tv_output_result"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
-                android:fontFamily="@font/montserrat_bold"
-                android:text="Result here..."
-                android:textColor="@color/low_dark_green_top_main_menu"
-                android:textSize="20sp"
-                app:layout_constraintEnd_toEndOf="@+id/btn_photo_gallery"
-                app:layout_constraintStart_toEndOf="@id/tv_output_title"
-                app:layout_constraintTop_toBottomOf="@id/btn_photo_camera" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
                 android:layout_marginTop="20dp"
-                android:layout_marginBottom="30dp"
-                android:fontFamily="@font/montserrat_medium"
-                android:text="Click on the result text to search on Google!"
-                android:textColor="@color/medium_grey"
-                android:textSize="13sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/btn_photo_gallery"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/btn_photo_camera"
-                app:layout_constraintTop_toBottomOf="@id/tv_output_title" />
+                app:layout_constraintEnd_toEndOf="@+id/imageView"
+                app:layout_constraintStart_toStartOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/classified"
+                android:fontFamily="@font/montserrat_bold"
+                android:text=". . . . . . ."
+                android:textColor="@color/low_dark_green_top_main_menu"
+                android:textSize="22sp"
+                android:textStyle="bold|italic"
+                android:layout_marginTop="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/imageView"
+                app:layout_constraintStart_toStartOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/classified"
+                app:layout_constraintVertical_bias="0.0" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
