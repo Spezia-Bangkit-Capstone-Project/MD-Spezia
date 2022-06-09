@@ -13,7 +13,7 @@ android {
         targetSdk 32
         versionCode 1
         versionName "1.0"
-        buildConfigField 'String', 'SPEZIA_BASE_URL', '"https://spezia-351617.as.r.appspot.com/"'
+        buildConfigField 'String', 'SPEZIA_BASE_URL', '"https://spezia-app-352214.et.r.appspot.com/"'
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
