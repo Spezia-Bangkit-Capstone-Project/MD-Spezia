@@ -100,4 +100,8 @@
     <string name="item_row_description">Description</string>
     <string name="item_row_details">Details</string>
     <string name="failed_load_data_dictionary">Failed to load data from server. Try again!</string>
+    <string name="gallery">GALLERY</string>
+    <string name="camera">CAMERA</string>
+    <string name="result">Result :</string>
+    <string name="dots">. . . . . .</string>
 </resources>
