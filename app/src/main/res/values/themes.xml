@@ -2,12 +2,12 @@
     <!-- Base application theme. -->
     <style name="Theme.Spezia" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/medium_primary_green_dark</item>
-        <item name="colorPrimaryVariant">@color/dark_green</item>
+        <item name="colorPrimary">@color/low_dark_green_top_main_menu</item>
+        <item name="colorPrimaryVariant">@color/dark_green_top_main_menu</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/medium_primary_green_light</item>
-        <item name="colorSecondaryVariant">@color/dark_green</item>
+        <item name="colorSecondary">@color/medium_green_top_main_menu</item>
+        <item name="colorSecondaryVariant">@color/dark_green_top_main_menu</item>
         <item name="colorOnSecondary">@color/white</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
@@ -20,10 +20,10 @@
 
     <style name="SplashScreenTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:windowBackground">@drawable/splash_background</item>
-        <item name="colorPrimary">@color/medium_primary_green_dark</item>
-        <item name="colorPrimaryDark">@color/dark_green</item>
-        <item name="colorAccent">@color/medium_primary_green_light</item>
-        <item name="android:statusBarColor">@color/dark_green</item>
+        <item name="colorPrimary">@color/low_dark_green_top_main_menu</item>
+        <item name="colorPrimaryDark">@color/dark_green_top_main_menu</item>
+        <item name="colorAccent">@color/low_dark_green_top_main_menu</item>
+        <item name="android:statusBarColor">@color/dark_green_top_main_menu</item>
     </style>
 
     <style name="TextAppearance.AppCompat.Widget.ActionBar.Title" parent="@android:style/TextAppearance">

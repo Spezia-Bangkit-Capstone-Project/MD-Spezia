@@ -91,9 +91,11 @@
 
             <Button
                 android:id="@+id/btn_scan_now"
-                android:layout_width="300dp"
+                android:layout_width="350dp"
                 android:layout_height="55dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
                 android:backgroundTint="@color/low_dark_green_top_main_menu"
                 android:fontFamily="@font/montserrat_bold"
                 android:text="@string/scan_now"
@@ -159,9 +161,11 @@
 
             <Button
                 android:id="@+id/btn_view_details"
-                android:layout_width="300dp"
+                android:layout_width="350dp"
                 android:layout_height="55dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
                 android:layout_marginBottom="40dp"
                 android:backgroundTint="@color/low_dark_green_top_main_menu"
                 android:fontFamily="@font/montserrat_bold"
@@ -169,8 +173,8 @@
                 android:visibility="gone"
                 app:cornerRadius="100dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/btn_photo_gallery"
-                app:layout_constraintStart_toStartOf="@+id/btn_photo_camera"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_output_result" />
 
             <androidx.constraintlayout.widget.ConstraintLayout

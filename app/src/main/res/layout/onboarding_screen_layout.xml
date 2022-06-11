@@ -26,7 +26,7 @@
         android:layout_marginTop="15dp"
         android:fontFamily="@font/montserrat_bold"
         android:text="@string/onBoarding_general_title"
-        android:textColor="@color/dark_green"
+        android:textColor="@color/low_dark_green_top_main_menu"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/imgOnBoarding"

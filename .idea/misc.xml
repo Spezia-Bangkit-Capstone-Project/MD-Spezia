@@ -14,6 +14,7 @@
         <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/drawable/background_main_menu_title.xml" value="0.185" />
         <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/drawable/background_top.xml" value="0.181" />
         <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/drawable/bg_button.xml" value="0.185" />
+        <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/drawable/bg_button_disable.xml" value="0.185" />
         <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/drawable/bg_dark_green.xml" value="0.1" />
         <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/drawable/bg_splash.xml" value="0.171" />
         <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/drawable/bg_text.xml" value="0.185" />
@@ -31,6 +32,7 @@
         <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/drawable/ic_circle_full.xml" value="0.108" />
         <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/drawable/ic_circle_full_24.xml" value="0.1" />
         <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/drawable/ic_circle_outlined.xml" value="0.108" />
+        <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/drawable/ic_close.xml" value="0.152" />
         <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/drawable/ic_contact.xml" value="0.1085" />
         <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/drawable/ic_definition.xml" value="0.185" />
         <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/drawable/ic_developer.xml" value="0.185" />
@@ -55,6 +57,7 @@
         <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/drawable/ic_switch_camera.xml" value="0.1" />
         <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/drawable/ic_up_arrow.xml" value="0.1085" />
         <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/drawable/ic_version.xml" value="0.185" />
+        <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/drawable/ic_warning.xml" value="0.152" />
         <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/drawable/icon_item_bg.xml" value="0.1535" />
         <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/drawable/indicator_selector.xml" value="0.108" />
         <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/drawable/not_selected.xml" value="0.108" />
@@ -64,23 +67,23 @@
         <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/drawable/white_circle_bg_loading.xml" value="0.185" />
         <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/layout-v23/activity_profile.xml" value="0.17135416666666667" />
         <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/layout/activity_about.xml" value="0.25" />
-        <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/layout/activity_article.xml" value="0.18" />
+        <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/layout/activity_article.xml" value="0.2" />
         <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/layout/activity_camera.xml" value="0.16" />
-        <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/layout/activity_dictionary.xml" value="0.15" />
+        <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/layout/activity_dictionary.xml" value="0.18" />
         <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/layout/activity_login.xml" value="0.22" />
-        <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/layout/activity_main.xml" value="0.16" />
         <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/layout/activity_on_boarding.xml" value="0.17239583333333333" />
         <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/layout/activity_on_boarding_screen.xml" value="0.18" />
         <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/layout/activity_profile.xml" value="0.14" />
-        <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/layout/activity_register.xml" value="0.5" />
-        <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/layout/activity_scan.xml" value="0.2" />
-        <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/layout/activity_spice_scan_details.xml" value="0.22" />
+        <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/layout/activity_scan.xml" value="0.22" />
+        <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/layout/activity_spice_scan_details.xml" value="0.18" />
         <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/layout/activity_spices_dictionary_details.xml" value="0.1" />
         <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/layout/activity_splash.xml" value="0.1" />
         <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
         <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/layout/activity_welcome.xml" value="0.2" />
-        <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/layout/onboarding_screen_layout.xml" value="0.22" />
-        <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/layout/spices_list_item_row.xml" value="0.25" />
+        <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/layout/onboarding_screen_layout.xml" value="0.2" />
+        <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/layout/spices_list_item_row.xml" value="0.75" />
         <entry key="..\:/Bangkit2022_MobileDev/CapstoneProject/Spezia/app/src/main/res/xml/file_paths.xml" value="0.17239583333333333" />
         <entry key="..\:/FADHIL/Program Bangkit/Latihan/spezia/app/src/main/res/drawable-v24/ic_article.xml" value="0.1445" />
         <entry key="..\:/FADHIL/Program Bangkit/Latihan/spezia/app/src/main/res/layout/activity_about.xml" value="0.209375" />

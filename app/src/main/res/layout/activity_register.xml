@@ -15,9 +15,9 @@
 
         <ImageView
             android:id="@+id/r_img_1"
-            android:layout_width="250dp"
-            android:layout_height="250dp"
-            android:src="@drawable/shapes"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:src="@drawable/rsz_shapes"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:contentDescription="@string/edge_decoration_img"/>
@@ -54,10 +54,10 @@
             android:id="@+id/r_text_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="-70dp"
+            android:layout_marginTop="-150dp"
             android:fontFamily="@font/montserrat_bold"
             android:text="@string/register_txt"
-            android:textColor="@color/medium_primary_green_dark"
+            android:textColor="@color/low_dark_green_top_main_menu"
             android:textSize="25sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -70,7 +70,7 @@
             android:layout_marginTop="10dp"
             android:fontFamily="@font/montserrat_medium"
             android:text="@string/regist_txt"
-            android:textColor="@color/medium_primary_green_dark"
+            android:textColor="@color/low_dark_green_top_main_menu"
             android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -84,7 +84,7 @@
             android:layout_marginTop="30dp"
             android:fontFamily="@font/montserrat_semibold"
             android:text="@string/username"
-            android:textColor="@color/medium_primary_green_dark"
+            android:textColor="@color/low_dark_green_top_main_menu"
             android:textSize="13sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/r_text_2" />
@@ -120,7 +120,7 @@
             android:layout_marginTop="15dp"
             android:fontFamily="@font/montserrat_semibold"
             android:text="@string/email"
-            android:textColor="@color/medium_primary_green_dark"
+            android:textColor="@color/low_dark_green_top_main_menu"
             android:textSize="13sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/nameEditTextLayout" />
@@ -158,7 +158,7 @@
             android:layout_marginTop="15dp"
             android:fontFamily="@font/montserrat_semibold"
             android:text="@string/password"
-            android:textColor="@color/medium_primary_green_dark"
+            android:textColor="@color/low_dark_green_top_main_menu"
             android:textSize="13sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/emailEditTextLayout" />
