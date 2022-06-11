@@ -104,4 +104,16 @@
     <string name="camera">CAMERA</string>
     <string name="result">Result :</string>
     <string name="dots">. . . . . .</string>
+
+    <string name="failed_get_permission">Failed to getting permission!</string>
+    <string name="failed_to_scan">Failed to scan. Try again!</string>
+    <string name="image_story_empty">Please input the image file first!</string>
+    <string name="view_details">View Details</string>
+    <string name="shot">Shot</string>
+    <string name="switch_camera">Switch camera</string>
+    <string name="failed_take_photo">Failed to take pictures!</string>
+    <string name="failed_show_camera">Failed to show camera!</string>
+    <string name="accuracy">Accuracy : %1$s.</string>
+    <string name="spice_scan_details">Spice Scan Details</string>
+    <string name="scan_now">Scan Now</string>
 </resources>

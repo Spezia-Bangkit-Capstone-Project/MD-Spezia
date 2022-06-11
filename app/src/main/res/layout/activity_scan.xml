@@ -48,8 +48,10 @@
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/clActionBar">
+        app:layout_constraintTop_toBottomOf="@+id/clActionBar"
+        app:layout_constraintVertical_bias="0.0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -57,62 +59,77 @@
 
             <Button
                 android:id="@+id/btn_photo_camera"
-                android:clickable="true"
                 android:layout_width="150dp"
-                android:layout_height="60dp"
+                android:layout_height="55dp"
                 android:layout_marginTop="30dp"
                 android:backgroundTint="@color/low_dark_green_top_main_menu"
+                android:clickable="true"
+                android:focusable="true"
                 android:fontFamily="@font/montserrat_bold"
                 android:text="@string/camera"
-                app:cornerRadius="10dp"
+                app:cornerRadius="100dp"
                 app:layout_constraintEnd_toStartOf="@id/guidelineScanAct1"
                 app:layout_constraintHorizontal_bias="0.6"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/iv_display_image"
-                android:focusable="true" />
+                app:layout_constraintTop_toBottomOf="@+id/iv_display_image" />
 
             <Button
                 android:id="@+id/btn_photo_gallery"
-                android:clickable="true"
                 android:layout_width="150dp"
-                android:layout_height="60dp"
+                android:layout_height="55dp"
                 android:layout_marginTop="30dp"
                 android:backgroundTint="@color/low_dark_green_top_main_menu"
+                android:clickable="true"
+                android:focusable="true"
                 android:fontFamily="@font/montserrat_bold"
                 android:text="@string/gallery"
-                app:cornerRadius="10dp"
+                app:cornerRadius="100dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="@+id/guidelineScanAct1"
-                app:layout_constraintTop_toBottomOf="@+id/iv_display_image"
-                android:focusable="true" />
+                app:layout_constraintTop_toBottomOf="@+id/iv_display_image" />
+
+            <Button
+                android:id="@+id/btn_scan_now"
+                android:layout_width="300dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/low_dark_green_top_main_menu"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/scan_now"
+                app:cornerRadius="100dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_photo_camera" />
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/iv_display_image"
-                app:shapeAppearanceOverlay="@style/round_imageView"
-                android:layout_width="300dp"
-                android:layout_height="300dp"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
                 android:layout_marginTop="30dp"
                 android:adjustViewBounds="true"
                 android:elevation="4dp"
+                android:scaleType="centerCrop"
                 android:src="@drawable/placeholder"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.5" />
+                app:layout_constraintVertical_bias="0.5"
+                app:shapeAppearanceOverlay="@style/round_imageView" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guidelineScanAct1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintGuide_percent="0.5"
-                android:orientation="vertical"/>
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
 
             <TextView
                 android:id="@+id/tv_output_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
+                android:layout_marginTop="30dp"
                 android:fontFamily="@font/montserrat_medium"
                 android:text="@string/result"
                 android:textColor="@color/medium_grey"
@@ -120,15 +137,16 @@
                 app:layout_constraintEnd_toStartOf="@+id/guidelineScanAct1"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/btn_photo_camera"
-                app:layout_constraintTop_toBottomOf="@id/btn_photo_camera" />
+                app:layout_constraintTop_toBottomOf="@+id/btn_scan_now" />
 
             <TextView
                 android:id="@+id/tv_output_result"
-                android:clickable="true"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginBottom="18dp"
+                android:clickable="true"
+                android:focusable="true"
                 android:fontFamily="@font/montserrat_bold"
                 android:text="@string/dots"
                 android:textColor="@color/medium_green_top_main_menu"
@@ -137,24 +155,48 @@
                 app:layout_constraintEnd_toEndOf="@+id/btn_photo_gallery"
                 app:layout_constraintStart_toEndOf="@id/tv_output_title"
                 app:layout_constraintTop_toTopOf="@+id/tv_output_title"
-                app:layout_constraintVertical_bias="0.0"
-                android:focusable="true" />
+                app:layout_constraintVertical_bias="0.0" />
 
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="30dp"
-                android:fontFamily="@font/montserrat_medium"
-                android:text="Click on the result text to see the details!"
-                android:textColor="@color/medium_grey"
-                android:textSize="13sp"
+            <Button
+                android:id="@+id/btn_view_details"
+                android:layout_width="300dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="40dp"
+                android:backgroundTint="@color/low_dark_green_top_main_menu"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/view_details"
+                android:visibility="gone"
+                app:cornerRadius="100dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/btn_photo_gallery"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/btn_photo_camera"
                 app:layout_constraintTop_toBottomOf="@+id/tv_output_result" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/white_circle_bg_scan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_circle_bg_loading"
+                android:elevation="10dp"
+                android:padding="20dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ProgressBar
+                    android:id="@+id/loadingIndicatorScan"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

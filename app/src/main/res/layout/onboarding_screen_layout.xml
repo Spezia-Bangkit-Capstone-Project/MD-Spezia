@@ -28,7 +28,7 @@
         android:text="@string/onBoarding_general_title"
         android:textColor="@color/dark_green"
         android:textAlignment="center"
-        android:textSize="18sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/imgOnBoarding"
         app:layout_constraintStart_toStartOf="@+id/imgOnBoarding"
         app:layout_constraintTop_toBottomOf="@+id/imgOnBoarding" />
@@ -39,10 +39,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:textAlignment="center"
-        android:fontFamily="@font/montserrat_medium"
+        android:lineSpacingExtra="4dp"
+        android:fontFamily="@font/montserrat_semibold"
         android:text="@string/onBoarding_general_desc"
         android:textColor="@color/medium_grey"
-        android:textSize="12sp"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="@+id/imgOnBoarding"
         app:layout_constraintStart_toStartOf="@+id/imgOnBoarding"
         app:layout_constraintTop_toBottomOf="@+id/titleOnBoarding" />

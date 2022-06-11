@@ -33,6 +33,12 @@
         android:theme="@style/Theme.Spezia"
         tools:targetApi="31">
         <activity
+            android:name=".view.scan.SpiceScanDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.camerax.CameraActivity"
+            android:exported="false" />
+        <activity
             android:name=".view.dictionary.SpicesDictionaryDetailsActivity"
             android:exported="false" />
         <activity

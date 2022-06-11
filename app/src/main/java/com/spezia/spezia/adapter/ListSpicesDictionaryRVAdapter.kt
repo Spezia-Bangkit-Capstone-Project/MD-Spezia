@@ -54,7 +54,6 @@ class ListSpicesDictionaryRVAdapter(
                     }
                 }
             }
-
     }
 
     override fun onCreateViewHolder(

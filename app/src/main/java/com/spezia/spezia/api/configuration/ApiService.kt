@@ -32,9 +32,9 @@ interface ApiService {
     ) : Call<DictionaryResponse>
 
     @Multipart
-    @POST("/spices/scan")
+    @POST("spices/scan")
     fun scanSpices(
         @Header("Authorization") token: String,
-        @Part photo : MultipartBody.Part
+        @Part image : MultipartBody.Part
     ) : Call<ScanSpicesResponse>
 }

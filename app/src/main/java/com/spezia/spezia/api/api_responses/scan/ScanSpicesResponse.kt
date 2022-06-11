@@ -11,5 +11,5 @@ data class ScanSpicesResponse(
 	val message: String,
 
 	@field:SerializedName("predictionResult")
-	val predictionResult: ScanSpicesApiModel,
+	val predictionResult: ScanSpicesApiModel
 )
