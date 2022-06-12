@@ -45,9 +45,7 @@ class SpicesDictionaryDetailsActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-        val i = Intent(this, DictionaryActivity::class.java)
-        i.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
-        startActivity(i)
+        Intent.FLAG_ACTIVITY_CLEAR_TOP
         finish()
     }
 }
