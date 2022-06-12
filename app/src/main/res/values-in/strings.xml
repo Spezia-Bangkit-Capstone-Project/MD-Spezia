@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Spezia</string>
+    <string name="onBoarding_title1">Identifikasi Rempah-Rempah</string>
+    <string name="onBoarding_general_title">Judul Umum Layar Orientasi</string>
+    <string name="onBoarding_general_desc">Deskripsi Umum Layar Orientasi</string>
+    <string name="onBoarding_general_img">Gambar Vektor Layar Orientasi</string>
+    <string name="onBoarding_general_logo">Logo Aplikasi Layar Orientasi</string>
+    <string name="onBoarding_title2">Pelajari Beragam Spesies Rempah-Rempah</string>
+    <string name="onBoarding_desc1">Anda dapat mengidentifikasi rempah yang tidak Anda ketahui melalui kamera Anda</string>
+    <string name="onBoarding_desc2">Mari kita belajar tentang banyak spesies rempah-rempah yang ada di dunia ini</string>
+    <string name="get_started">MULAI</string>
+    <string name="next">BERIKUTNYA</string>
+
+    <string name="enter_name">Masukkan nama pengguna</string>
+    <string name="enter_email">Masukkan email kamu</string>
+    <string name="email_invalid">Email tidak valid</string>
+    <string name="enter_pass">Masukkan kata sandi Anda</string>
+    <string name="password_invalid">Kata sandi harus minimal 8 karakter</string>
+    <string name="title_main">Hai teman!</string>
+    <string name="txt_main">Silakan pilih salah satu tombol berikut,\nterima kasih dan selamat datang di Spezia.</string>
+    <string name="login">Login</string>
+    <string name="register">Daftar</string>
+    <string name="email">Email</string>
+    <string name="password">Kata Sandi</string>
+    <string name="not_have_an_account">Tidak punya akun?</string>
+    <string name="welcome_back">Selamat Datang Kembali!</string>
+    <string name="register_txt">Daftar!</string>
+    <string name="username">Nama Pengguna</string>
+    <string name="already_have_an_account">Sudah memiliki akun?</string>
+    <string name="regist_txt">Silahkan isi data dengan baik dan benar!</string>
+    <string name="edge_decoration_img">Gambar dekorasi tepi</string>
+    <string name="spezia_logo_welcome">Gambar logo layar selamat datang Spezia</string>
+    <string name="back">Kembali</string>
+    <string name="login_vector_illustration">Ilustrasi vektor login</string>
+
+    <string name="api_message_registration_failed">Gagal Mendaftarkan Akun!</string>
+    <string name="api_message_email_has_been_used">Email telah digunakan. Coba gunakan email lain yang Anda miliki!</string>
+    <string name="api_message_error_on_server">Terjadi kesalahan saat menyambung ke server. Silakan periksa koneksi internet Anda!</string>
+    <string name="invalid_pw_empty">Kata sandi harus diisi!</string>
+    <string name="invalid_email_empty">Email harus diisi!</string>
+    <string name="invalid_username_empty">Nama pengguna harus diisi!</string>
+    <string name="login_failed">Gagal untuk masuk. Coba lagi!</string>
+    <string name="wrong_email_pw">Email / kata sandi salah!</string>
+    <string name="awesome">Mantap!</string>
+    <string name="login_success">Anda telah berhasil masuk. Selamat bersenang-senang!</string>
+    <string name="login_success2">Berhasil masuk..</string>
+    <string name="continueAlertDialog">Lanjutkan</string>
+
+    <string name="greeting">Hai, %1$s.</string>
+    <string name="logout">Keluar</string>
+    <string name="cancel">Batal</string>
+    <string name="logout_confirmation">Apakah Anda yakin untuk keluar? Tindakan ini akan menghapus sesi Anda!</string>
+    <string name="account_created_successfully">Mantap! Akun Anda telah berhasil dibuat. Silahkan login!</string>
+
+    <string name="team_name">1. Tobi Fiambodo Syech Maulana\n2. Muhammad Fadhil Aulia\n3. Apriza Zicka Rizquina\n4. Anggasta Aji Azhari\n5. Mazaya Syarafina\n6. Ade Iqbal</string>
+    <string name="link"><![CDATA[https://id.pngtree.com/freepng/small-autumn-forest-plant-small-scene_5765665.html\n\nhttps://id.pngtree.com/freepng/small-scene-shrubs-grasses-and-plants_7120250.html\n\nhttps://storyset.com/planthttps://storyset.com/plant\n\nhttps://storyset.com/illustration/software-engineer/amico\n\nhttps://storyset.com/illustration/mobile-development/cuate\n\nhttps://storyset.com/illustration/profile-pic/cuate#8DC73DFF&hide=&hide=complete\n\nhttps://www.freepik.com/free-vector/vector-illustration-variety-spices-herbs-wooden-background_1265737.htm#query=Spice%20Vectors&position=10&from_view=search\n\nhttps://www.freepik.com/free-vector/vector-illustration-variety-spices-herbs-wooden-bowls-black-background_1320609.htm#page=3&query=spice&position=45&from_view=keyword]]></string>
+    <string name="about">Tentang</string>
+    <string name="spezia">Spezia!</string>
+    <string name="desk_spezia">Sebuah aplikasi berbasis pengolahan gambar yang berguna untuk mengenali rempah yang ada kemudian memberikan deskripsi tentang rempah tersebut. Dengan memindai atau mengambil foto rempah-rempah, pengguna dapat mengetahui jenis dan deskripsi rempah-rempah. Tidak hanya itu, pengguna juga diberikan rekomendasi atau saran tentang pengolahan makanan apa saja yang bisa disajikan menggunakan bahan-bahan tersebut dan memberikan informasi penggunaan bahan-bahan tersebut sebagai obat herbal.</string>
+    <string name="dev_title">Pengembang Aplikasi</string>
+    <string name="resources">Sumber Daya</string>
+    <string name="in_development">Dalam Pengembangan…</string>
+    <string name="head_text_main">Jenis Rempah-Rempah</string>
+    <string name="subtext_main">Anda dapat memindai foto rempah-rempah dengan menggunakan fitur ini</string>
+    <string name="anyone_text">Ada yang mau dibantu, Kawan?</string>
+    <string name="anyone_2">Kami akan membantu Anda untuk memindai rempah yang belum anda ketahui.</string>
+    <string name="language">Bahasa</string>
+
+    <string name="spezia_header">SPEZIA</string>
+    <string name="spezia_desc_header">Aplikasi pengenalan rempah\nberbasis pemrosesan gambar</string>
+    <string name="edge_decoration_img_main_menu">Gambar dekorasi tepi di menu utama</string>
+    <string name="dashboard_title">Dasbor</string>
+    <string name="scan">Pindai</string>
+    <string name="dictionary">Kamus</string>
+    <string name="article">Artikel</string>
+    <string name="profile">Profile</string>
+    <string name="scan_desc">Pindai rempah yang tidak Anda ketahui.</string>
+    <string name="dictionary_desc">Tambah pengetahuan Anda tentang berbagai rempah-rempah.</string>
+    <string name="article_desc">Jelajahi artikel terbaru tentang rempah-rempah.</string>
+    <string name="profile_desc">Lihat profil akun Anda dan pengaturan lainnya.</string>
+    <string name="menu_item_icon_1">Ikon item menu pindai</string>
+    <string name="menu_item_icon_2">Ikon item menu kamus</string>
+    <string name="menu_item_icon_3">Ikon item menu artikel</string>
+    <string name="menu_item_icon_4">Ikon item menu profil</string>
+
+    <string name="profile_vector_illustration">Ilustrasi vektor profil</string>
+    <string name="contact_us_desc">Jika Anda memiliki masalah, pertanyaan lain, atau ingin melaporkan bug yang terkait dengan aplikasi Spezia ini, silakan kirim email ke: C22-PS136@bangkit.academy</string>
+    <string name="contact_us_title">Hubungi Kami</string>
+    <string name="app_developer_title">Pengembang Aplikasi</string>
+    <string name="spezia_definition_title">Definisi Spezia</string>
+    <string name="about_spezia_title">Tentang Spezia</string>
+    <string name="app_version_title">Versi Aplikasi</string>
+    <string name="app_version_desc">Versi terbaru dari aplikasi Spezia ini adalah 1.0</string>
+
+    <string name="item_row_spice_name">Nama Rempah</string>
+    <string name="item_row_short_desc">Deskripsi singkat di sini…</string>
+    <string name="item_row_pic_spices">Gambar rempah</string>
+    <string name="item_row_scientific_name">Nama Latin</string>
+    <string name="item_row_benefits">Manfaat</string>
+    <string name="item_row_description">Deskripsi</string>
+    <string name="item_row_details">Detail</string>
+    <string name="failed_load_data_dictionary">Gagal memuat data dari server. Coba lagi!</string>
+    <string name="gallery">GALERI</string>
+    <string name="camera">KAMERA</string>
+    <string name="result">Hasil :</string>
+    <string name="dots">. . . . . .</string>
+
+    <string name="failed_get_permission">Gagal mendapatkan izin!</string>
+    <string name="failed_to_scan">Gagal memindai. Coba lagi!</string>
+    <string name="image_story_empty">Silahkan masukan gambar terlebih dahulu!</string>
+    <string name="view_details">Lihat Detail</string>
+    <string name="shot">Ambil</string>
+    <string name="switch_camera">Ganti kamera</string>
+    <string name="failed_take_photo">Gagal mengambil gambar!</string>
+    <string name="failed_show_camera">Gagal menampilkan kamera!</string>
+    <string name="accuracy">Akurasi : %1$s.</string>
+    <string name="spice_scan_details">Detail Pemindaian Rempah</string>
+    <string name="scan_now">Pindai Sekarang</string>
+</resources>

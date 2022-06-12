@@ -27,7 +27,7 @@
     <string name="register_txt">Register!</string>
     <string name="username">Username</string>
     <string name="already_have_an_account">Already have an account?</string>
-    <string name="regist_txt">Please fill the data with properly and correctly</string>
+    <string name="regist_txt">Please fill the data with properly and correctly!</string>
     <string name="edge_decoration_img">Edge decoration image</string>
     <string name="spezia_logo_welcome">Spezia welcome screen logo image</string>
     <string name="back">Back</string>
@@ -63,7 +63,7 @@
     <string name="head_text_main">Kind of Spices</string>
     <string name="subtext_main">You can scan spice photos by using this feature</string>
     <string name="anyone_text">Anyone want help, Friend?</string>
-    <string name="anyone_2">We\'ll help you about what spices you have to scan</string>
+    <string name="anyone_2">We will help you to scan the spices you don\'t know yet</string>
     <string name="language">Language</string>
 
     <string name="spezia_header">SPEZIA</string>
@@ -107,7 +107,7 @@
 
     <string name="failed_get_permission">Failed to getting permission!</string>
     <string name="failed_to_scan">Failed to scan. Try again!</string>
-    <string name="image_story_empty">Please input the image file first!</string>
+    <string name="image_story_empty">Please input the image first!</string>
     <string name="view_details">View Details</string>
     <string name="shot">Shot</string>
     <string name="switch_camera">Switch camera</string>
