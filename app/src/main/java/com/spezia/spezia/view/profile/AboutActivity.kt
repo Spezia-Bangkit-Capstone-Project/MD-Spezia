@@ -1,5 +1,6 @@
 package com.spezia.spezia.view.profile
 
+import android.content.Intent
 import android.graphics.drawable.Drawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -10,6 +11,8 @@ import androidx.appcompat.content.res.AppCompatResources
 import com.spezia.spezia.R
 import com.spezia.spezia.databinding.ActivityAboutBinding
 import com.spezia.spezia.databinding.ActivityProfileBinding
+import com.spezia.spezia.view.dictionary.DictionaryActivity
+import com.spezia.spezia.view.main_menu.MainActivity
 
 class AboutActivity : AppCompatActivity() {
 
@@ -87,5 +90,10 @@ class AboutActivity : AppCompatActivity() {
         }
     }
 
-
+    override fun onBackPressed() {
+        val i = Intent(this, ProfileActivity::class.java)
+        i.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+        startActivity(i)
+        finish()
+    }
 }

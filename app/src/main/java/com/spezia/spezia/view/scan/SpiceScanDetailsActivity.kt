@@ -1,11 +1,14 @@
 package com.spezia.spezia.view.scan
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import com.bumptech.glide.Glide
 import com.spezia.spezia.api.api_responses.scan.ScanSpicesApiModel
 import com.spezia.spezia.databinding.ActivitySpiceScanDetailsBinding
+import com.spezia.spezia.view.dictionary.DictionaryActivity
+import com.spezia.spezia.view.main_menu.MainActivity
 
 class SpiceScanDetailsActivity : AppCompatActivity() {
 
@@ -39,5 +42,12 @@ class SpiceScanDetailsActivity : AppCompatActivity() {
             tvSpiceDescription.text = spiceScanDetailsMetadata.description
             tvSpiceBenefits.text = spiceScanDetailsMetadata.benefits.toString()
         }
+    }
+
+    override fun onBackPressed() {
+        val i = Intent(this, ScanActivity::class.java)
+        i.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+        startActivity(i)
+        finish()
     }
 }

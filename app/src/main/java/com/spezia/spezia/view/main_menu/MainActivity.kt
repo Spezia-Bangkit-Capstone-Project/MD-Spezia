@@ -9,6 +9,7 @@ import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.preferencesDataStore
 import androidx.lifecycle.ViewModelProvider
+import com.spezia.spezia.R
 import com.spezia.spezia.databinding.ActivityMainBinding
 import com.spezia.spezia.local_datastore.UserModel
 import com.spezia.spezia.local_datastore.UserPreferences

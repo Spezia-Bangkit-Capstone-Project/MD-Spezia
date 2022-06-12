@@ -23,6 +23,8 @@ import com.spezia.spezia.api.api_responses.scan.ScanSpicesResponse
 import com.spezia.spezia.api.configuration.ApiConfig
 import com.spezia.spezia.databinding.ActivityScanBinding
 import com.spezia.spezia.view.camerax.CameraActivity
+import com.spezia.spezia.view.dictionary.DictionaryActivity
+import com.spezia.spezia.view.main_menu.MainActivity
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.MultipartBody
 import okhttp3.RequestBody.Companion.asRequestBody
@@ -218,6 +220,13 @@ class ScanActivity : AppCompatActivity() {
                 finish()
             }
         }
+    }
+
+    override fun onBackPressed() {
+        val i = Intent(this, MainActivity::class.java)
+        i.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+        startActivity(i)
+        finish()
     }
 
     private fun showIndicatorScanLoadingProcess(lp:Boolean) {

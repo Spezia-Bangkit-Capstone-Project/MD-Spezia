@@ -1,5 +1,6 @@
 package com.spezia.spezia.view.dictionary
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -7,6 +8,7 @@ import com.bumptech.glide.Glide
 import com.spezia.spezia.R
 import com.spezia.spezia.api.api_responses.dictionary.DictionaryApiModel
 import com.spezia.spezia.databinding.ActivitySpicesDictionaryDetailsBinding
+import com.spezia.spezia.view.main_menu.MainActivity
 
 class SpicesDictionaryDetailsActivity : AppCompatActivity() {
 
@@ -40,5 +42,12 @@ class SpicesDictionaryDetailsActivity : AppCompatActivity() {
             tvSpiceDescription.text = spicesDictionaryMetadata.description
             tvSpiceBenefits.text = spicesDictionaryMetadata.benefits.toString()
         }
+    }
+
+    override fun onBackPressed() {
+        val i = Intent(this, DictionaryActivity::class.java)
+        i.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+        startActivity(i)
+        finish()
     }
 }

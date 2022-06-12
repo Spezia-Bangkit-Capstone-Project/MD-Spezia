@@ -1,6 +1,7 @@
 package com.spezia.spezia.view.dictionary
 
 import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -17,6 +18,7 @@ import com.spezia.spezia.api.api_responses.dictionary.DictionaryApiModel
 import com.spezia.spezia.databinding.ActivityDictionaryBinding
 import com.spezia.spezia.local_datastore.UserPreferences
 import com.spezia.spezia.utils.ViewModelFactory
+import com.spezia.spezia.view.main_menu.MainActivity
 import com.spezia.spezia.view_model.DictionaryViewModel
 
 private val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "settings")
@@ -89,6 +91,13 @@ class DictionaryActivity : AppCompatActivity() {
             rvDictionarySpices.setHasFixedSize(true)
             rvDictionarySpices.adapter = rvAdapter
         }
+    }
+
+    override fun onBackPressed() {
+        val i = Intent(this, MainActivity::class.java)
+        i.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+        startActivity(i)
+        finish()
     }
 
     companion object{

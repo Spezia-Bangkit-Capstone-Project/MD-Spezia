@@ -15,6 +15,8 @@ import com.spezia.spezia.databinding.ActivityProfileBinding
 import com.spezia.spezia.local_datastore.UserModel
 import com.spezia.spezia.local_datastore.UserPreferences
 import com.spezia.spezia.utils.ViewModelFactory
+import com.spezia.spezia.view.dictionary.DictionaryActivity
+import com.spezia.spezia.view.main_menu.MainActivity
 import com.spezia.spezia.view.welcome_screen.WelcomeActivity
 import com.spezia.spezia.view_model.ProfileViewModel
 
@@ -97,6 +99,13 @@ class ProfileActivity : AppCompatActivity() {
                 finish()
             }
         }
+    }
+
+    override fun onBackPressed() {
+        val i = Intent(this, MainActivity::class.java)
+        i.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
+        startActivity(i)
+        finish()
     }
 
     companion object{
