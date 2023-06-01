@@ -38,7 +38,7 @@ class DictionaryViewModel(private val pref : UserPreferences) : ViewModel() {
                 if (response.isSuccessful && respBody != null) {
                     Log.d("DictionaryActivity", "Token : $token")
                     Log.d("DictionaryActivity", "Message : ${respBody.message}")
-                    allSpicesDictionary.postValue(respBody.spicesResult)
+                    allSpicesDictionary.postValue(respBody.data)
                     allSpicesDictionary.value = listSpicesDictionary
                 } else {
                     Log.d("DictionaryActivity", "Token : $token")

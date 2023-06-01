@@ -10,6 +10,6 @@ data class DictionaryResponse(
 	@field:SerializedName("message")
 	val message: String,
 
-	@field:SerializedName("spicesResult")
-	val spicesResult: ArrayList<DictionaryApiModel>
+	@field:SerializedName("data")
+	val data: ArrayList<DictionaryApiModel>
 )
