@@ -99,10 +99,10 @@ class LoginViewModel(private val pref : UserPreferences) : ViewModel() {
                         if (!error) {
                             Log.d("LoginViewModel :","Response Body Check - Success 2")
                             val user = UserModel(
-                                respBody.loginResult.userId,
-                                respBody.loginResult.username,
-                                respBody.loginResult.email,
-                                respBody.loginResult.token,
+                                respBody.data.userId,
+                                respBody.data.username,
+                                respBody.data.email,
+                                respBody.data.token,
                                 true
                             )
                             loginInLogin(user)
