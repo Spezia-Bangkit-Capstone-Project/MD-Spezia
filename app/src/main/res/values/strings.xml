@@ -113,7 +113,7 @@
     <string name="switch_camera">Switch camera</string>
     <string name="failed_take_photo">Failed to take pictures!</string>
     <string name="failed_show_camera">Failed to show camera!</string>
-    <string name="accuracy">Accuracy : %1$s.</string>
+    <string name="confidence">Accuracy : %1$s.</string>
     <string name="spice_scan_details">Spice Scan Details</string>
     <string name="scan_now">Scan Now</string>
 </resources>

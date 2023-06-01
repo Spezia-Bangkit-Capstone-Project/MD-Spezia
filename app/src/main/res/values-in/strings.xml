@@ -114,7 +114,7 @@
     <string name="switch_camera">Ganti kamera</string>
     <string name="failed_take_photo">Gagal mengambil gambar!</string>
     <string name="failed_show_camera">Gagal menampilkan kamera!</string>
-    <string name="accuracy">Akurasi : %1$s.</string>
+    <string name="confidence">Akurasi : %1$s.</string>
     <string name="spice_scan_details">Detail Pemindaian Rempah</string>
     <string name="scan_now">Pindai Sekarang</string>
 </resources>
