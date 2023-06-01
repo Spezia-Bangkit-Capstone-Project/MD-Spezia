@@ -23,7 +23,6 @@ import com.spezia.spezia.api.api_responses.scan.ScanSpicesResponse
 import com.spezia.spezia.api.configuration.ApiConfig
 import com.spezia.spezia.databinding.ActivityScanBinding
 import com.spezia.spezia.view.camerax.CameraActivity
-import com.spezia.spezia.view.dictionary.DictionaryActivity
 import com.spezia.spezia.view.main_menu.MainActivity
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.MultipartBody
@@ -121,21 +120,21 @@ class ScanActivity : AppCompatActivity() {
 
                             binding?.btnViewDetails?.visibility = View.VISIBLE
                             binding?.apply {
-                                tvOutputResult.text = respBody.predictionResult.name
+                                tvOutputResult.text = respBody.data.name
                                 Toast.makeText(
                                     this@ScanActivity,
-                                    getString(R.string.accuracy,
-                                        respBody.predictionResult.accuracy),
+                                    getString(R.string.confidence,
+                                        respBody.data.confidence),
                                     Toast.LENGTH_LONG).show()
 
                                 val scanMetadata = ScanSpicesApiModel(
-                                    respBody.predictionResult.accuracy,
-                                    respBody.predictionResult.spiceId,
-                                    respBody.predictionResult.name,
-                                    respBody.predictionResult.latinName,
-                                    respBody.predictionResult.image,
-                                    respBody.predictionResult.description,
-                                    respBody.predictionResult.benefits
+                                    respBody.data.confidence,
+                                    respBody.data.spiceId,
+                                    respBody.data.name,
+                                    respBody.data.latinName,
+                                    respBody.data.image,
+                                    respBody.data.description,
+                                    respBody.data.benefits
                                 )
                                 Log.d("ScanSpicesModel : ", scanMetadata.toString())
 
@@ -146,7 +145,7 @@ class ScanActivity : AppCompatActivity() {
                                         it.putExtra(
                                             SpiceScanDetailsActivity.
                                             EXTRA_SPICES_SCAN_DETAILS,
-                                            respBody.predictionResult)
+                                            respBody.data)
                                         startActivity(it)
                                     }
                                 }
