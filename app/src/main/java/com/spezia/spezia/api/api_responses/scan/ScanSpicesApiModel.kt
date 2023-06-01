@@ -6,8 +6,8 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class ScanSpicesApiModel(
-    @field:SerializedName("accuracy")
-    val accuracy: String,
+    @field:SerializedName("confidence")
+    val confidence: String,
 
     @field:SerializedName("spiceId")
     val spiceId: String,
