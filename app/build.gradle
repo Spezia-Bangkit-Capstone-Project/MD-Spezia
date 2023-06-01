@@ -13,7 +13,7 @@ android {
         targetSdk 32
         versionCode 1
         versionName "1.0"
-        buildConfigField 'String', 'SPEZIA_BASE_URL', '"https://filthy-boa-outfit.cyclic.app"'
+        buildConfigField 'String', 'SPEZIA_BASE_URL', '"https://spezia-388405.uw.r.appspot.com/"'
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
