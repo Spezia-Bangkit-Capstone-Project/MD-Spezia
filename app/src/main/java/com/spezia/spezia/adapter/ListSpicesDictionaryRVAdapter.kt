@@ -1,6 +1,9 @@
 package com.spezia.spezia.adapter
 
 import android.app.Activity
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
+import android.util.Base64
 import android.content.Intent
 import android.util.Log
 import android.view.LayoutInflater
@@ -23,6 +26,12 @@ class ListSpicesDictionaryRVAdapter(
                 binding.apply {
                     tvItemSpiceName.text = dictionaryModel.name
                     tvItemShortDesc.text = dictionaryModel.description
+
+                    val decodedBitmap = decodeBase64ToBitmap(dictionaryModel.image)
+                    if (decodedBitmap != null) {
+                        imgItemPhoto.setImageBitmap(decodedBitmap)
+                    }
+
                     Glide.with(itemView.context)
                         .load(dictionaryModel.image)
                         .circleCrop()
@@ -66,12 +75,17 @@ class ListSpicesDictionaryRVAdapter(
     }
 
     override fun onBindViewHolder(holder: ListSpicesDictionaryViewHolder, position: Int) {
-        holder.bind(listSpicesDictionary[position])
+        val dictionaryModel = listSpicesDictionary[position]
+        holder.bind(dictionaryModel)
     }
 
     override fun getItemCount(): Int {
         return listSpicesDictionary.size
     }
 
+    private fun decodeBase64ToBitmap(base64String: String): Bitmap? {
+        val decodedBytes = Base64.decode(base64String, Base64.DEFAULT)
+        return BitmapFactory.decodeByteArray(decodedBytes, 0, decodedBytes.size)
+    }
 
 }
